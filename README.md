@@ -7,7 +7,7 @@ AWS 공부 기록장 TIL<br>
  
 <body>
 <strong>⭐<2024.3.10></strong><br><br>
-덤프 242p~ <br>
+덤프 242p~311p <br>
 <br>
 <ul>
   <li>NoSQL중 하나인 AWS에서 제공하는 DynamoDB는 계층형 데이터 구조를 지원한다.</li>
