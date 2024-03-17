@@ -35,7 +35,9 @@
   - Amazon 인증기관(CA)는 사이트에 대한 인증서를 발급하기 전, ACM는 요청에 지정한 모든 도메인 이름을 사용자가 소유하거나 제어하고 있음을 입증해야 함<br>
 -> 프라이빗 호스팅 영역이거나 기타 프리이빗 도메인의 리소스 검증X<br>따라서 DNS검증을 해야함.<br><br>DNS공급자에게 하나 이상의 CNAME 레코드를 ACM을 통해 제공해야 하고, 이를 통해 해당 도메인의 소유권을 검증할 수 있다. <br><br>또한 ACM 콘솔을 통해 최상위 도메인 example.com에 대한 일반 인증서와 *.example.com에 대한 와일드카드 인증서를 요청하여 하위 도메인에 대한 웹사이트를 암호화 할 수 있다.<br>https://docs.aws.amazon.com/acm/latest/userguide/domain-ownership-validation.html <br><br>외부 키 관리자를 사용하기 위해선, 외부키 관리자가 지원하는 KMS 외부 키 저장소를 사용한다. 외부 키 스토어의 KMS키를 사용하는 암호화 및 복호화 작업은 자체 키 보관(HYOK) 라는 암호화 키 자료를 사용해 외부 키 관리자가 수행 ㅇ
 
-         External key stores let you control the root of trust. Data encrypted under KMS keys in your external key store can be decrypted only by using the external key manager that you control.
+         External key stores let you control the root of trust.
+         Data encrypted under KMS keys in your external key store can be decrypted 
+         only by using the external key manager that you control.
 
     https://docs.aws.amazon.com/kms/latest/developerguide/keystore-external.html
 
