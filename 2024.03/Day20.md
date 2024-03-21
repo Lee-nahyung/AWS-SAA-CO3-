@@ -11,7 +11,7 @@ https://docs.aws.amazon.com/filegateway/latest/filefsxw/file-gateway-fsx-concept
 
 - Amazon RDS는 단일 대기 인스턴스가 포함된 다중 AZ 배포 사용 <br>-> DB 인스턴스에 대한 고가용성 및 장애조치 제공.
 
-        But, 고가용성 옵션은 읽기 전용 시나리오에 대한 확장 솔루션이 아닙니다. 읽기 트래픽을 제공하기 위해 대기 복제본을 사용할 수 없습니다. 읽기 전용 트래픽을 제공하려면 대신 다중 AZ DB 클러스터 또는 읽기 전용 복제본을 사용하십시오.
+         But, 고가용성 옵션은 읽기 전용 시나리오에 대한 확장 솔루션이 아닙니다. 읽기 트래픽을 제공하기 위해 대기 복제본을 사용할 수 없습니다. 읽기 전용 트래픽을 제공하려면 대신 다중 AZ DB 클러스터 또는 읽기 전용 복제본을 사용하십시오.
         
     https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZSingleStandby.html<br>
 
