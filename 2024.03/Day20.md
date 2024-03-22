@@ -11,7 +11,7 @@ https://docs.aws.amazon.com/filegateway/latest/filefsxw/file-gateway-fsx-concept
 
 - Amazon RDS는 단일 대기 인스턴스가 포함된 다중 AZ 배포 사용 <br>-> DB 인스턴스에 대한 고가용성 및 장애조치 제공.
 
-        But, 고가용성 옵션은 읽기 전용 시나리오에 대한 확장 솔루션이 아닙니다. 읽기 트래픽을 제공하기 위해 대기 복제본을 사용할 수 없습니다. 읽기 전용 트래픽을 제공하려면 대신 다중 AZ DB 클러스터 또는 읽기 전용 복제본을 사용하십시오.
+         But, 고가용성 옵션은 읽기 전용 시나리오에 대한 확장 솔루션이 아닙니다. 읽기 트래픽을 제공하기 위해 대기 복제본을 사용할 수 없습니다. 읽기 전용 트래픽을 제공하려면 대신 다중 AZ DB 클러스터 또는 읽기 전용 복제본을 사용하십시오.
         
     https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZSingleStandby.html<br>
 
@@ -81,3 +81,10 @@ CMK는 IAM을 통해 권한을 부여받아 제어 가능하다.<br><br>
 고객이 직접 암호화 키를 생성하고 관리. <br><br>
 
   - +대칭 키: 암호화/복호화시 필요한 암호화 키가 1개
+ 
+  - +비대칭 키 : 암호화시 퍼블릭 키 필요,<br>
+복호화 시 프라이빗 키 필요.<br>
+(프라이빗 키 엑세스 하려면 API 호출 필요)<br>
+ex)외부에서 KMS API키에 엑세스 할 수 없는 사용자에 의해 암호화 하려는 경우, 그 사용자들은 퍼블릭 키를 사용해 데이터를 암호화하고 계정 안에 있는 우리는 프라이빗 키를 사용해 데이터를 복호화.<br>
+https://docs.aws.amazon.com/ko_kr/kms/latest/developerguide/concepts.html
+
